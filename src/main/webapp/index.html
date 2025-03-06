@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Business Website</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Navigation Styles */
+        .navbar {
+            background-color: #2c3e50;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .navbar-logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+
+        .navbar-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .navbar-links a:hover {
+            color: #3498db;
+        }
+
+        /* Container Styles */
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+
+        /* Home Page Styles */
+        .hero {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            text-align: center;
+            padding: 4rem 0;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* About Page Styles */
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .about-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .about-image img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Services Page Styles */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+
+        .service-card {
+            background-color: #f4f4f4;
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+
+        /* Contact Page Styles */
+        .contact-form {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #f9f9f9;
+            padding: 2rem;
+            border-radius: 10px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #2980b9;
+        }
+
+        /* Footer Styles */
+        .footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="index.html" class="navbar-logo">MyBusiness</a>
+        <div class="navbar-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Home Page (index.html) -->
+    <div class="container">
+        <section class="hero">
+            <h1>Welcome to MyBusiness</h1>
+            <p>We provide innovative solutions to help your business grow and succeed in today's competitive market.</p>
+        </section>
+    </div>
+
+    <footer class="footer">
+        © 2025 MyBusiness. All Rights Reserved.
+    </footer>
+</body>
+</html>
+
+
+
+<!-- Services Page (services.html) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Same head section as index.html -->
+</head>
+<body>
+    <!-- Same navigation as index.html -->
+    <div class="container">
+        <h2 style="text-align: center; margin-bottom: 2rem;">Our Services</h2>
+        <section class="services-grid">
+            <div class="service-card">
+                <h3>Web Design</h3>
+                <p>Create stunning, responsive websites tailored to your business needs.</p>
+            </div>
+            <div class="service-card">
+                <h3>Digital Marketing</h3>
+                <p>Boost your online presence with our comprehensive marketing strategies.</p>
+            </div>
+            <div class="service-card">
+                <h3>Consulting</h3>
+                <p>Expert advice to help your business navigate complex challenges.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        © 2025 MyBusiness. All Rights Reserved.
+    </footer>
+</body>
+</html>
+
+<!-- Contact Page (contact.html) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Same head section as index.html -->
+</head>
+<body>
+    <!-- Same navigation as index.html -->
+    <div class="container">
+        <form class="contact-form">
+            <h2 style="text-align: center; margin-bottom: 1.5rem;">Contact Us</h2>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <footer class="footer">
+        © 2025 MyBusiness. All Rights Reserved.
+    </footer>
+</body>
+</html>
