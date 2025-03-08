@@ -63,6 +63,7 @@ pipeline {
                                 docker rmi -f marcos
                                 docker build -t marcos .
                                 docker tag marcos archu09/business
+                                docker login -u archu09 -p Archana09*
                                 docker push archu09/business
                                 """)
                             ],
