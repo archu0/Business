@@ -62,7 +62,7 @@ pipeline {
                                 docker rm -f tomcat || true
                                 docker rmi -f archu09/business || true
                                 docker build -t archu09/business .
-                                docker login -u archu09 -p mypassword
+                                docker login -u archu09 -p docker_hub
                                 docker push archu09/business
                                 """)
                             ],
