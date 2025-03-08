@@ -61,8 +61,8 @@ pipeline {
                                 sshTransfer(execCommand: """
                                 docker rm -f tomcat
                                 docker rmi -f marcos
-                                docker build -t newimage .
-                                docker tag newimage archu09/business
+                                docker build -t marcos .
+                                docker tag marcos archu09/business
                                 docker push archu09/business
                                 """)
                             ],
