@@ -62,7 +62,6 @@ pipeline {
                                 docker rm -f tomcat
                                 docker rmi -f archu09/business
                                 docker build -t archu09/business .
-                                docker login -u archu09 -p docker_hub
                                 docker push archu09/business
                                 """)
                             ],
