@@ -21,17 +21,22 @@ pipeline {
         }
         stage("Terraform refresh") {
              steps {
-                sh "TF_VAR_aws_access_key=created_paste TF_VAR_aws_secret_key=created_paste terraform refresh"
+                sh "terraform refresh"
+            }
+        }
+        stage("Terraform validate") {
+             steps {
+                sh "terraform validate"
             }
         }
         stage("Terraform plan") {
             steps {
-                sh "TF_VAR_aws_access_key=created_paste TF_VAR_aws_secret_key=created_paste terraform plan"
+                sh "terraform plan"
             }
         }
         stage("Terraform apply") {
             steps {
-                sh "TF_VAR_aws_access_key=created_paste TF_VAR_aws_secret_key=created_paste terraform apply --auto-approve"
+                sh "terraform apply --auto-approve"
             }
         }
     }
