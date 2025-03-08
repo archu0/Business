@@ -10,7 +10,7 @@
       command: docker rm -f tomcat
       ignore_errors: yes
     - name: Remove previous image
-      command: docker rmi marcos
+      command: docker rmi archu09/business
       ignore_errors: yes
     - name: Pull and run image
-      command: docker run -it -d -p 8081:8080 --name tomcat marcos
+      command: docker run -it -d -p 8081:8080 --name tomcat archu09/business
