@@ -72,26 +72,7 @@ pipeline {
                 )
             }
             }
-         stage("Copy playbook file to ansible and execute") {
-            steps {
-               
-                sshPublisher(
-                    continueOnError: false, 
-                    failOnError: true,
-                    publishers: [
-                        sshPublisherDesc(
-                            configName: "marcos",
-                            transfers: [
-                                sshTransfer(sourceFiles: 'play.yml'),
-                                sshTransfer(execCommand: "ansible-playbook play.yml")
-                            ],
-                            verbose: true
-                        )
-                    ]
-                )
-            
-            }
-        }
+        
         
     }
 }
