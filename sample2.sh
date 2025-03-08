@@ -1,5 +1,6 @@
 #!/bin/bash
 sudo yum update -y
+sudo yum install -y git
 sudo yum search docker
 sudo yum info docker
 sudo yum install -y docker
